@@ -19,7 +19,7 @@ with lib;
       ExecStart = "${pkgs.writeShellScript "${name}.sh" ''
         set -euo pipefail
         PATH=${makeBinPath (with pkgs; [ coreutils findutils inotify-tools ])}
-        bin_dir=~/.vscode-server/bin
+        bin_dir=~/.vscode-server-insiders/bin
 
         # Fix any existing symlinks before we enter the inotify loop.
         if [[ -e $bin_dir ]]; then
