@@ -7,7 +7,7 @@ Experimental support for VS Code Server in NixOS. The NodeJS by default supplied
 ```nix
 {
   imports = [
-    (fetchTarball "https://github.com/msteen/nixos-vscode-server/tarball/master")
+    (fetchTarball "https://github.com/shism2/nixos-vscode-server/tarball/master")
   ];
 
   services.vscode-server.enable = true;
